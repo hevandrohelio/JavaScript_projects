@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bailenson';
+    src: url(data/fonts/Bailenson.ttf) format('truetype'); src: url(data/fonts/Bailenson.otf) format('opentype');
+    }
+@font-face {
+    font-family: 'Cardinal';
+    src: url(data/fonts/Cardinal.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Cardinal_alt';
+    src: url(data/fonts/Cardinal-Alternate.ttf) format('truetype');
+}
+:root{
+    --cor0:#C4AA84;
+    --cor1: #26252A;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.pre_casamento, .dia_noiva, .cerimonia, .festa, .lua_mel{
+    align-items: center;
+    margin: 2%;
+}
+
+img{
+    width: 100%;
+    margin: 1.5%;
+    transition: transform 0.5s;
+    box-shadow: 0px 3px 10px 1px black;
+}
+img:hover{
+  transform: translateX(10px) scale(2);
+}
+h1{
+    font-family: 'Bailenson', 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 72px;
+    color: var(--cor0);
+    margin: 0%;
+}
+h2{
+    font-family: 'Cardinal', 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: var(--cor0);
+}
+footer, a{
+    text-align: center;
+    color: white;
+}
