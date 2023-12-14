@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reversed_strings</title>
+    <style>
+        body {
+            background-color: #003265;
+        }
+        h1{
+            text-align: center;
+            color:whitesmoke
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section > div {
+            background-color: aliceblue;
+            width: 500px;
+            height: 300px;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Reversed Strings</h1>
+    <section class="container">
+        <div>
+            <h3 style="text-align: center;">Digite uma palavra abaixo</h3>
+            <div class="container">
+                <input type="text" name="text_box" id="text_box">
+                <button type="button" onclick="reverse()">Inverter</button>
+            </div>
+            <p id="text_reversed">Texto</p>
+        </div>
+    </section>
+    <script>
+        function reverse(str) {
+            str = document.getElementById('text_box').value;
+            let astr = str.split("");
+            let rastr = astr.reverse();
+            let jastr = rastr.join("")
+            return document.getElementById("text_reversed").innerHTML=jastr;
+        }
+    </script>
+</body>
+
+</html>
